@@ -1,0 +1,143 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      // "j k": "vim::NormalBefore"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-shift-down": [
+        "editor::AddSelectionBelow",
+        {
+          "skip_soft_wrap": true
+        }
+      ]
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-shift-up": [
+        "editor::AddSelectionAbove",
+        {
+          "skip_soft_wrap": true
+        }
+      ]
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-r ctrl-r": "editor::Rename"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-k ctrl-d": "editor::Format"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-d": "editor::DuplicateLineDown"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl--": "pane::GoBack"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "alt--": null
+    }
+  },
+  {
+    "context": "Welcome",
+    "bindings": {
+      "ctrl--": null
+    }
+  },
+  {
+    "context": "Onboarding",
+    "bindings": {
+      "ctrl--": null
+    }
+  },
+  {
+    "bindings": {
+      "ctrl--": null
+    }
+  },
+  {
+    "context": "Onboarding",
+    "bindings": {
+      "ctrl-ó": null
+    }
+  },
+  {
+    "context": "Onboarding",
+    "bindings": {
+      "ctrl-shift-ó": null
+    }
+  },
+  {
+    "context": "Welcome",
+    "bindings": {
+      "ctrl-ó": null
+    }
+  },
+  {
+    "context": "Welcome",
+    "bindings": {
+      "ctrl-shift-ó": null
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-k ctrl-c": [
+        "editor::ToggleComments",
+        {
+          "advance_downwards": false
+        }
+      ]
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-shift-s": "workspace::SaveAs"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-shift-s": "workspace::SaveAll"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-k s": "workspace::SaveAll"
+    }
+  }
+]
